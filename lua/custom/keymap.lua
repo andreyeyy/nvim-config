@@ -55,3 +55,7 @@ vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { desc = 'Save file' })
 
 -- Select all text 
 vim.keymap.set('n', '<leader>a', 'ggVG', { desc = 'Select all' })
+
+-- Space + / = comment/uncomment
+vim.keymap.set('n', '<leader>/', 'gcc', { remap = true, desc = 'Toggle comment' })
+vim.keymap.set('v', '<leader>/', 'gc', { remap = true, desc = 'Toggle comment' })
