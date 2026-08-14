@@ -59,3 +59,7 @@ vim.keymap.set('n', '<leader>a', 'ggVG', { desc = 'Select all' })
 -- Space + / = comment/uncomment
 vim.keymap.set('n', '<leader>/', 'gcc', { remap = true, desc = 'Toggle comment' })
 vim.keymap.set('v', '<leader>/', 'gc', { remap = true, desc = 'Toggle comment' })
+
+-- Tab and Shift + Tab = change indentation
+vim.keymap.set('v', '<Tab>', '>gv', { desc = 'Indent selection' })
+vim.keymap.set('v', '<S-Tab>', '<gv', { desc = 'Un-indent selection' })
