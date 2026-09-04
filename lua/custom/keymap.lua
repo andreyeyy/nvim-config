@@ -63,3 +63,8 @@ vim.keymap.set('v', '<leader>/', 'gc', { remap = true, desc = 'Toggle comment' }
 -- Tab and Shift + Tab = change indentation
 vim.keymap.set('v', '<Tab>', '>gv', { desc = 'Indent selection' })
 vim.keymap.set('v', '<S-Tab>', '<gv', { desc = 'Un-indent selection' })
+
+-- Close current buffer
+vim.keymap.set("n", "<leader>c", function()
+  require("mini.bufremove").delete(0, false)
+end, { desc = "Close buffer" })
