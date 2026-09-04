@@ -72,6 +72,9 @@ do
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+  -- Disables swap files
+  vim.opt.swapfile = false
+
   -- Preview substitutions live, as you type!
   vim.o.inccommand = 'split'
 
